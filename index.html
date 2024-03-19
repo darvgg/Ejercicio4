@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+    </style>
 </head>
 <body>
-    <ul>
-        <li>Pagina de Imagines: <a href="imagenes.html">Imagenes</a></li>
-        <li>Pagina de Tablas: <a href="tablas.html">Tablas</a></li>
-        <li>Pagina de Texto: <a href="texto.html">Texto</a></li>
-    </ul>
-    <p>Por: Diego Andres Rios Valverde</p>
+    <header>
+        <nav>
+            <ul>
+                <li>Pagina de Imagines: <a href="imagenes.html">Imagenes</a></li>
+                <li>Pagina de Tablas: <a href="tablas.html">Tablas</a></li>
+                <li>Pagina de Texto: <a href="texto.html">Texto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><p>Por: Diego Andres Rios Valverde</p></main> 
 </body>
 </html>
